@@ -6,3 +6,4 @@ const fieldCharacter = '░';
 const pathCharacter = '*';
 
 console.log('This is a test from the macbook');
+console.log('This is the second change from macbook');
