@@ -6,14 +6,23 @@ const fieldCharacter = '░';
 const pathCharacter = '*';
 
 class Field {
-  constructor(input) {
-    this.input = input;
+  constructor(field) {
+    this.field = field
   }
 
   print() {
-    console.log('Printing this');
+    let joinedField = this.field.join();
+    console.log(joinedField);
   }
 }
 
-const newField = new Field('Hello');
-newField.print();
+const myField = new Field([
+  ['*', '░', 'O'],
+  ['░', 'O', '░'],
+  ['░', '^', '░'],
+]);
+
+myField.print();
+
+const direction = prompt('Which direction?');
+console.log(`Direction: ${direction}`);
